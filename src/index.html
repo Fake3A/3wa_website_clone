@@ -8,10 +8,10 @@
     <title>3W Academy: Ecole de Développement web, Un apprentissage par la Pratique</title>
     <script src="./script.js" defer></script>
 </head>
-<body>
+<body style="overflow-y: hidden;">
     <main>
         <div class="wrapper">
-            <header class="header">
+            <header class="header" >
                 <a href="/" id="logo"><img src="https://3wacademy.fr/assets/img/logo-3wa-ecole-code-numerique.svg" alt="Logo 3wa"></a>
                 <span>L'école des nouveaux métiers<br/> du code et du numérique</span>
                 <nav>
@@ -108,9 +108,9 @@
             </div>
             <div id="carrousel" class="slick-initialized slick-slider">
                 <div class="slick-list draggable">
-                    <div class="slick-track" style="opacity: 1; width: 5760px;">
+                    <div class="slick-track" style="opacity: 1;">
                         <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"
-                            style="width: 1920px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+                            style="width: 1920px; position: absolute; inset: 0; opacity: 1;">
                             <div>
                                 <picture style="width: 100%; display: inline-block;">
                                     <source
@@ -121,32 +121,7 @@
                                 </picture>
                             </div>
                         </div>
-                        <div class="slick-slide" data-slick-index="1" aria-hidden="true"
-                            style="width: 1920px; position: relative; left: -1920px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;"
-                            tabindex="-1">
-                            <div>
-                                <picture style="width: 100%; display: inline-block;">
-                                    <source
-                                        srcset="https://3wacademy.fr/assets/img/home/formation-developpeur-web-ecole-3w-acedemy.jpg"
-                                        media="(max-width: 768px)">
-                                    <img src="https://3wacademy.fr/assets/img/home/3w-acedemy-ecole-developpement-web-post-bac.jpg"
-                                        width="1920" height="740" alt="Codage - formation développement web 3W Academy">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="slick-slide" data-slick-index="2" aria-hidden="true"
-                            style="width: 1920px; position: relative; left: -3840px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;"
-                            tabindex="-1">
-                            <div>
-                                <picture style="width: 100%; display: inline-block;">
-                                    <source
-                                        srcset="https://3wacademy.fr/assets/img/home/codage-ordinateur-formation-developpement-web-3w-academy.jpg"
-                                        media="(max-width: 768px)">
-                                    <img src="https://3wacademy.fr/assets/img/home/formation-ecole-de-developpement-web-post-bac.jpg"
-                                        width="1920" height="740" alt="3WA - École de développeurs web">
-                                </picture>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
