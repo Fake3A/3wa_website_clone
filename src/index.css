@@ -4,7 +4,24 @@
     padding: 0;
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
+    box-sizing: border-box;
 }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+  }
+  h1, .h1 {
+    margin: 0 0 40px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #fff;
+  }
 .header {
     position: relative;
     display: flex;
@@ -62,7 +79,52 @@ nav a span {
 }
 .wrapper {
     position: sticky;
-    z-index: 500;
+    z-index: 1000;
     top: 0;
     width: 100%;
 }
+#contact_picto_enveloppe {
+    border-bottom: 7px solid transparent;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  #slider {
+    position: relative;
+    height: calc(100vh - 120px);
+  }
+  #wwwa {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    height: calc(100vh - 120px);
+    background-color: rgba(0,0,0,0.2);
+    inset: 0;
+  }
+  #wwwa > div:first-of-type {
+    position: relative;
+    width: 35%;
+    border-right: 1px solid #fff;
+  }
+  #wwwa > div {
+    display: flex;
+    padding: 30px;
+  }
+  #wwwa > div:first-of-type img {
+    max-width: 310px;
+  }
+  #wwwa > div:last-of-type {
+    width: 65%;
+  }
+  #wwwa > div > * {
+    margin: auto;
+  }
